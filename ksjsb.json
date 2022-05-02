@@ -1,0 +1,602 @@
+{
+  "llsid": 2001306295595175200,
+  "result": 1,
+  "errorMsg": "OK",
+  "impAdInfo": [
+    {
+      "type": 1,
+      "pageId": 11101,
+      "subPageId": 11101001,
+      "gridPos": 0,
+      "gridUnitId": "1",
+      "adInfo": [
+        {
+          "adTrackInfo": [
+            {
+              "type": 1,
+              "url": [
+                "https://ocpc-api.shinet.cn/dispense/kuaishou/click?dsp=kuaishou&imeiMd5=__IDFA2__&callbackUrl=http%3A%2F%2Fad.partner.gifshow.com%2Ftrack%2Factivate%3Fcallback%3DE6inEFSl5vi9P6NQEqSCZNpeSUFC1NLuOst-E9rCmdeVRQX_Eb4cEDrhquU5mw7-P9E9F_xf-Dq1jOUDP6RJHuo9vftPj_wh7TBmq1VL8dGihD3McodIAyVX903Q7xdAuP_tXFfW5JDh0k8ZACtixTCSnrw0FWvo5aie_rp1shRo3AOUDG4fziiwaik-CrP1ZtJoOhGhm-yY_dSyApRt7g&campaignid=793902527&oaid=__OAID__&oaid2=__OAID2__&mac=__MAC3__&aid=1448943041&cid=22681981335&did=793902527&androidId=__ANDROIDID2__&product=yyrs&account_id=11992210&os=ios"
+              ]
+            }
+          ],
+          "adConversionInfo": {
+            "h5Url": "",
+            "deeplinkUrl": "",
+            "appDownloadUrl": "https://itunes.apple.com/cn/app/id1606687961",
+            "marketUrl": "",
+            "h5Type": 0,
+            "email": "",
+            "cellphone": "",
+            "midPageUrl": "",
+            "liveStreamId": "PojYA1tAoJg"
+          },
+          "adBaseInfo": {
+            "creativeId": 22681981335,
+            "accountId": 11992210,
+            "adSourceType": 1,
+            "adDescription": "开局一块地，来悠悠人生，打造你的专属农场庄园！",
+            "adSourceDescription": "广告",
+            "adOperationType": 1,
+            "adShowDuration": 56,
+            "appIconUrl": "http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg",
+            "appName": "悠悠人生",
+            "appPackageName": "",
+            "appScore": 0,
+            "adActionDescription": "立即安装",
+            "adMarkContent": "广告",
+            "campaignId": 793902527,
+            "unitId": 1448943041,
+            "adPos": 0,
+            "adxSourceType": 0,
+            "chargeInfo": "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",
+            "campaignName": "行为游戏8-上下滑-04241745",
+            "deliveryStartTs": 0,
+            "deliveryEndTs": 0,
+            "adShowEnable": 0,
+            "productName": "悠悠人生",
+            "enableCloseAd": true,
+            "adActionBarColor": "e52d2d",
+            "inspireAdInfo": {
+              "inspireAdBillTime": 35000
+            },
+            "autoDownloadForWifi": false,
+            "usePriorityCard": false,
+            "serverExpTag": ""
+          },
+          "adMaterialInfo": {
+            "materialType": 1,
+            "materialFeature": [
+              {
+                "materialUrl": "https://alimov2.a.kwimgs.com/upic/2022/03/12/21/BMjAyMjAzMTIyMTQ1MDhfMjY4NTM5NzI1M182OTQ5Mzc1MTkwMF8wXzM=_b_B74e3af12eb599e3050f621d7bf08a935.mp4?tag=1-1651476312-unknown-0-hsyotepcgb-b5ba524dc7ea0c64&clientCacheKey=3xmqxhwr47bt2t2_b.mp4&tt=b&di=b7dbfc96&bp=13292",
+                "coverUrl": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg",
+                "materialSize": {
+                  "width": 0,
+                  "height": 0
+                },
+                "featureType": 1,
+                "photoId": 5217420238989994000,
+                "photoSize": {
+                  "width": 720,
+                  "height": 1280
+                }
+              }
+            ]
+          },
+          "advertiserInfo": {
+            "userId": 2685397253,
+            "userName": "快手用户1640335434412",
+            "accountId": 11992210,
+            "userGender": "U",
+            "portraitUrl": "https://static.yximgs.com/uhead/AB/2019/06/19/20/BMjAxOTA2MTkyMDExNDFfOTAwNDFfZGVmYXVsdFVzZXJIZWFkX2RlZmF1bHQ=.png"
+          },
+          "reservationId": "",
+          "liveStartTime": 0
+        }
+      ]
+    }
+  ],
+  "feeds": [
+    {
+      "streamManifest": {
+        "version": "1.0.0",
+        "businessType": 2,
+        "mediaType": 2,
+        "videoId": "3fad110c9ca14a08",
+        "hideAuto": false,
+        "manualDefaultSelect": false,
+        "stereoType": 0,
+        "adaptationSet": [
+          {
+            "id": 1,
+            "duration": 55088,
+            "representation": [
+              {
+                "id": 1,
+                "url": "http://v4.kwaicdn.com/ksc1/DzmLpcibS00aNJbSxXk_7vqQnJX_VA0TfvKs-hQAg-C6GEsbD67KVIGt7J1x_cqZ7Q4Wg-_jtiwcFAfwKLPVuADzZtKZ5O--rh2FYwPTkzWqBSsC5o24IR2O8HsRGZ6RqQtKE1ka6y_tRmy35Pg_b8f2VA-qAR7rh3bbMk__fDocx1P1QNwI3ylGRpCatfRl.mp4?pkey=AAWSyW4bEkpFXXQ7svlrmHCJgOuIoZd6z-CXh-RTU7ot7LuhAZ_kkufHXG8lPB5Rmg4C4nQsoTjMmRWSM2HRUrTzOomkg-V3aT_5sMBgJZOy8FLxxTwPzmQgGyUBYA1ZpCc&tag=1-1651476312-unknown-0-kbyezpf9yz-538b882789a5384a&type=hot&clientCacheKey=3xmqxhwr47bt2t2_swft.mp4&di=b7dbfc96&bp=10002&tt=swft&ss=vp",
+                "backupUrl": [
+                  "http://v1.kwaicdn.com/ksc1/DzmLpcibS00aNJbSxXk_7vqQnJX_VA0TfvKs-hQAg-C6GEsbD67KVIGt7J1x_cqZ7Q4Wg-_jtiwcFAfwKLPVuADzZtKZ5O--rh2FYwPTkzWqBSsC5o24IR2O8HsRGZ6RqQtKE1ka6y_tRmy35Pg_b8f2VA-qAR7rh3bbMk__fDocx1P1QNwI3ylGRpCatfRl.mp4?pkey=AAXdol9tQexMAQy3bi0SJa3_hWhqeMnYC0BH7zSJovW8JqUg4raJHuKRQcAk-h-HyhThQZoqoEbKEkr_NLeNr3cGmP9LTxbQdGANUYLryO1oll6dL-SDQLtGJ4XJyH7QyZ4&tag=1-1651476312-unknown-1-7oivldck0f-568adb1791c8b37c&type=hot&clientCacheKey=3xmqxhwr47bt2t2_swft.mp4&di=b7dbfc96&bp=10002&tt=swft&ss=vp"
+                ],
+                "maxBitrate": 2300,
+                "avgBitrate": 740,
+                "width": 720,
+                "height": 1280,
+                "frameRate": 29.97003,
+                "quality": 1.6,
+                "kvqScore": {
+                  "FR": 3.617725389507826,
+                  "NR": 3.757467746734619
+                },
+                "qualityType": "720p",
+                "qualityLabel": "高清",
+                "featureP2sp": false,
+                "hidden": false,
+                "disableAdaptive": false,
+                "defaultSelect": false,
+                "comment": "3fad110c9ca14a08/swft",
+                "hdrType": 0,
+                "fileSize": 5100352,
+                "bitratePattern": [
+                  741,
+                  540,
+                  1196,
+                  101,
+                  196
+                ]
+              }
+            ]
+          }
+        ],
+        "playInfo": {},
+        "videoFeature": {
+          "blurProbability": 0.1053757444024086,
+          "blockyProbability": 0.5105531811714172,
+          "avgEntropy": 14.099423476627894,
+          "mosScore": 0.770571231842041
+        }
+      },
+      "comments": [],
+      "recoTags": [],
+      "adminTags": [],
+      "tags": [],
+      "us_c": 0,
+      "comment_count": 0,
+      "slideCommentEntryDisabled": false,
+      "following": 0,
+      "verified": false,
+      "headurls": [
+        {
+          "cdn": "static.yximgs.com",
+          "url": "http://static.yximgs.com/uhead/AB/2019/06/19/20/BMjAxOTA2MTkyMDExNDFfOTAwNDFfZGVmYXVsdFVzZXJIZWFkX2RlZmF1bHQ=.png"
+        }
+      ],
+      "user_sex": "U",
+      "user_name": "快手用户1640335434412",
+      "displayTime": null,
+      "location": {},
+      "timestamp": 1651476312366,
+      "time": "2022-05-02 15:25:12",
+      "caption": "开局一块地，来悠悠人生，打造你的专属农场庄园！",
+      "share_count": 107,
+      "view_count": 1356722,
+      "photo_status": 0,
+      "unlike_count": 0,
+      "like_count": 0,
+      "forward_count": 0,
+      "photo_id": 5217420238989994000,
+      "isShareCountExp": false,
+      "ad": {
+        "creativeId": 22681981335,
+        "chargeInfo": "u2o69MlrUu7from4iPWuRr9hUiAtw7z3ZpyM8BVKKyZBlH/5V7mwWPNUQIcLbXD/9R5NmsHQwnLkra428X92utmMHGVx703CAN4RsHFA8ROhXu6ttHVzzWO/Qoc+eW7BEKMhZ7dugwamENt9k6PNVOnejdC+3CJvmnjYrpxxVa17Pgb4OvqaBr3OIx7YZHg5wFD2d5rUgdS+eYHN5ad7+z83bbs3EYHwlFH3c2RkJSnFg9pfT/UIVkyeR70zNywVlxa9yUptV9gVpzwvWED/BuMF33ryhYaD2Jngsp0JvP7YuNG43iyiy7Y6i2N504aywRnnwkXbN3qgAoUDv+rN6K/Ufb74PCJk5/eJvHvi325EiIaupmDflFgSS25lBW7UF3nt2Q2SN6Pjd+GjNgDbksrK4U8Ed/K8DbhaPgnchBSgpbTV0RjQca83fFpAM+FTiKHZf/gSDpG5WItJTtUlDXrT52LI7FDOdZYjFE7QJM7CRKFARLelOplZFE8xmAQ5OEFHHwDnHyrpzFc1cG4BzTh9n2qAXV8GIRlGXGeajTo2zG2vUFJ6hroM+lpQib27+fl2cKwLS4xsFFHbMCXWXr1TR/UtvZuPWNQd9JsuPozVAEHBzXvFJgHBm4b+/p/qjK5C/2Ivue5dD1MfF5bbo8QzgY6gcQ1hrurN27oRjC1tIbIXO4KeoDsW4s6IyKOe8d41zAobRRGaDIlVHpOtdgGxHtI1kYOZ4CydPVQndAmHZ1EpN0IyhQfYycAkuc9M9D/iJ4nOiGt5oAO+7y03TAUaSh8wSNmkuCCPHz5Q+dr8++z1LHwYyDIosc/MeZ9hYw7UlDUuMWir50gw3FMu4rInBIJ6VlsKRBa9k/1xA3Y/pGvZDCtEXFAexCmfq19cBqEQmFqPnX26qapIdHQ9S9zQjVYIZv7uNsTh2KyZndLAFsQkQzjVfZQu6G3a2pIuGk3ZWp1nSV788oS+3B8pgONO7btu+9EcOotIccLh0xJEfTjs8sTJHo7ce8NpEiLlHx59W3+DW+SKoWsAq7ZYuKeizBZLA2nG+MypoFJat/H+4j084yP7LU82/N8zo0xwg7jJAMEZAmQkve72Rm8nZXZmAUr/GibLAsn5LLwM975Bti/SEQ/0xgbjxBCbOguHOHgNRFWzCbasdAHGVS3E0uV0Q7YI/QaiHGaZCCMaizCTA6pa2MJLKd1wARpvj68nVoTJqYrHSe6Lzs848gFjBOIik41mfgSeP1j7mnxBTT/7EWfF1fmTNqBmbAJqhKaTMYwTh3Y2eY8DEPlmsFv/DMaHnJleFFNFVUGrLaPT9x35g0DWhH9mIt4uvIzrOcl2rOas99m/yLrG7Dd+hJrtStwpCtLqce47uz9w4HcPLXS9Z7Ei4zvCRmxOpUNPIbWllSmrzR9sp3IVwyhIt9UxdmDMJ7mU119FOexh40g2blnkWJARGaavmXDpLNlqm1zI8EuXEo63KYuFeXdjICj0aYtHMnarBz3CQzT27plRBeMprC6Klu+NJy2+VtvgICBPcGQrb0/L1UcDdEMQupJhmOPq+gNELZJyNEVmoEVsvvVYyB7+59FZQ/NgM2Rcy2Y+6oKZAFK4aFb7/nC+V5n1GIjOak63nZJvr3Ukbyoj/uIOFxXr2ODBGcOeJLZP5fSPLi22yWrg4+CdzvLQ6PnbqqaLVKrvzYpvBY40gMxOpwS3CTcqOItAAgfMp/l+tP0y9ztMLEzeDmknLbLIiWYvG0Cyr6G24YDQnCtNe+RrzaK9IdSaFQ+DFQldsgwZOMTgGu4f+JlX5SkBsx0pNge2DDbA646LBU7vLZWyC0WOlO+UrjgAMy6nHbNnqUDxLj5WxNXUe+7iaXmMBjpKcSx/9oCHHA2yQ8b605BDWv9DxeOuixfYMZV/yvzF9mcukOFkL8O38bbMW+IwYulMO899Xdxe7WOc3Ss6fyn52PMCnOqnSRv3V9+OpVkwFgnfiA3k9Spp7v6hfcf50lOdgjHU92d+SM1UDzwI8CUTTcBz5KRfowPx/lsrVT9lF/+OZGcr8+JVC5ZkJk4emhSF9TF24EQDv0ndq+Q2Kd/ElfhnUBTum4oauAbTOtqAqeI7wNn0W8luGhfE1me/bsZVr8yYu0dumB4t7KNMUElFhOmYIOmpbhF41RsVSnWdRBd5r1IbIsKxNbGtK4pePWTRPTQbTkVFlWp340x0F5VAepq0OfqN2LnO7CqNgM7g8KruTZePj5DMnRDXIkf8eYLnJZrtv5jxUoR3MKpthq8wrkQBN/BUiZ6JnnNsWWwWTDMq/SknUri6aCeZ5ehtWoHOuYJJ1beQg9nno5aJ1OmjvakKoSAy0R3zVjxpBaHgJrcPCZvJMpSnw564uzxZTFEUQ6a5ciASvPe2OggHMFw2WcqJvaUYUlWvz9uglW32EyW4ji5UieoOEagtL8TLUSAYBtrpVSpfN05fn+56wI9Btkt7QGo=",
+        "sourceType": 1,
+        "conversionType": 1,
+        "displayType": 2,
+        "title": "立即安装",
+        "url": "https://itunes.apple.com/cn/app/id1606687961",
+        "sourceDescription": "广告",
+        "subscriptDescription": "广告",
+        "adType": 1,
+        "tracks": [
+          {
+            "type": 1,
+            "url": "https://ocpc-api.shinet.cn/dispense/kuaishou/click?dsp=kuaishou&imeiMd5=__IDFA2__&callbackUrl=http%3A%2F%2Fad.partner.gifshow.com%2Ftrack%2Factivate%3Fcallback%3DE6inEFSl5vi9P6NQEqSCZNpeSUFC1NLuOst-E9rCmdeVRQX_Eb4cEDrhquU5mw7-P9E9F_xf-Dq1jOUDP6RJHuo9vftPj_wh7TBmq1VL8dF7uvRBHFn4QTCQTZ1NDRsl3br8YxU_bJMD9nwRgyihOvQuhppJoELK-5EBl1PZN2PEtQsUeFg_KZC5wjXftFrHYOjT3L9VsNmYSNKbgew4NA&campaignid=793902527&oaid=__OAID__&oaid2=__OAID2__&mac=__MAC3__&aid=1448943041&cid=22681981335&did=793902527&androidId=__ANDROIDID2__&product=yyrs&account_id=11992210&os=ios",
+            "urlOperationType": 1
+          }
+        ],
+        "expireTimestamp": 1682524799999,
+        "adCover": {
+          "coverUrls": [
+            {
+              "url": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg"
+            },
+            {
+              "url": "http://ali2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg"
+            }
+          ],
+          "width": 720,
+          "height": 1280
+        },
+        "appName": "悠悠人生",
+        "showEndOption": true,
+        "orderId": 0,
+        "preloadLandingPage": false,
+        "commentOn": true,
+        "actionBarRatio": 1,
+        "extData": "{\"templateInfos\":[\"6_1_116_0\",\"8_1_101_0\"]}",
+        "alertNetMobile": false,
+        "useH5": false,
+        "appIconUrl": "http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg",
+        "h5App": false,
+        "fansTopFeedFlameType": 4,
+        "enableShowFansTopFlame": false,
+        "fansTopDetailPageFlameType": 3,
+        "fansTopDetailPageFlameDesc": "",
+        "actionBarLoadTime": 3000,
+        "itemHideLabel": false,
+        "labelStyle": 0,
+        "newStyle": true,
+        "actionBarStyle": 1,
+        "score": 0,
+        "actionBarColor": "e52d2d",
+        "manuUrls": [],
+        "usePriorityCard": false,
+        "coverId": 4519081268,
+        "templateType": 1,
+        "pageId": 11101,
+        "subPageId": 11101001,
+        "landingPageStyle": 0,
+        "clientStyleInfo": {
+          "landingPageActionbarInfo": {
+            "actionBarDisplayInfo": "推荐",
+            "actionBarShowTime": 3000,
+            "popLandingPageHeightPct": 30
+          },
+          "adMaterialFeatures": null
+        },
+        "weakStyle": false,
+        "adData": {
+          "cover": null,
+          "useTrackType": 0
+        },
+        "adDataV2": {
+          "abTestForAdForms": "{\"enable_appinstall_webcard_info\": false,\"enable_nebula_slide_landingpage\": true}",
+          "actionBarInfo": {
+            "actionBarColor": "e52d2d",
+            "actionBarLoadTime": 5000,
+            "actionBarStyle": 1,
+            "displayInfo": "立即安装",
+            "downloadedActionBarLoadTime": 3000,
+            "realShowDelayTime": 7000,
+            "withoutFloatingToComment": true
+          },
+          "adAfterCaption": 1,
+          "adCoverPageButtonControl": 6,
+          "adPageButtonControl": 6,
+          "captionAdvertisementInfo": {
+            "productIconUrl": "http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg",
+            "productName": "悠悠人生"
+          },
+          "commentActionBarInfo": {
+            "actionBarColor": "e52d2d",
+            "actionBarLocation": 2,
+            "actionBarStyle": 2,
+            "displayInfo": "立即安装",
+            "templateId": "dynamic-comment-actionbar"
+          },
+          "convertInfo": {
+            "convertId": 0,
+            "convertType": 0
+          },
+          "deepRewardedInfo": {},
+          "enableAppDownloadPause": true,
+          "enableSka": false,
+          "exitDialogInfo": {
+            "enableShowChangeVideoButton": false
+          },
+          "h5Data": "{\"coverUrlFrontend\":\"https://static.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.jpg\",\"extraDisplayInfo\":{\"exposeTag\":null,\"showStyle\":0,\"exposeTagInfoList\":null}}",
+          "inspireAdInfo": {
+            "enableClickOtherArea": true,
+            "inspireAdBillTime": 35000
+          },
+          "inspirePersonalize": {
+            "awardPersonalized": true,
+            "awardValue": "126"
+          },
+          "iosAppId": "1606687961",
+          "iosPageId": "",
+          "itemClickUrls": {
+            "actionBarClickUrls": {
+              "appLink": "",
+              "url": ""
+            }
+          },
+          "landingPageInfo": {
+            "commentTagVisible": true
+          },
+          "mixBarInfo": {
+            "templateId": "adtk-feed-mixbar"
+          },
+          "negativeMenuInfo": {
+            "negativeMenus": [
+              {
+                "id": 7,
+                "name": "不喜欢: 悠悠人生",
+                "clickAction": 2,
+                "url": "",
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/dislike_icon_yiji_normal.png"
+              },
+              {
+                "id": 8,
+                "name": "不喜欢: 模拟经营广告",
+                "clickAction": 2,
+                "url": "",
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/dislike_icon_similarpost_normal.png"
+              },
+              {
+                "id": 11,
+                "name": "不感兴趣",
+                "clickAction": 3,
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/layer_ad_dislike_icon.png"
+              },
+              {
+                "id": 12,
+                "name": "不感兴趣",
+                "clickAction": 3,
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/menu_layer_dislike_icon.png",
+                "desc": "减少此类内容"
+              },
+              {
+                "id": 13,
+                "name": "不感兴趣该内容",
+                "clickAction": 2
+              },
+              {
+                "id": 14,
+                "name": "举报",
+                "clickAction": 1,
+                "url": "https://activity.e.kuaishou.com/pages/report?layoutType=4&bizId=ad_fe_full_loading&photoId=69493751900",
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/layer_ad_report_icon.png"
+              },
+              {
+                "id": 15,
+                "name": "举报",
+                "clickAction": 1,
+                "url": "https://activity.e.kuaishou.com/pages/report?layoutType=4&bizId=ad_fe_full_loading&photoId=69493751900",
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/menu_layer_report_icon.png",
+                "desc": "低俗色情、虚假诈欺等"
+              },
+              {
+                "id": 16,
+                "name": "为何看到此广告",
+                "clickAction": 2,
+                "url": "https://activity.e.kuaishou.com/pages/report/why-show-ad-dialog?layoutType=4&bizId=ad_fe_full_loading",
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/layer_ad_reason_icon.png"
+              },
+              {
+                "id": 17,
+                "name": "为何看到此广告",
+                "clickAction": 1,
+                "url": "https://activity.e.kuaishou.com/pages/report/why-show-ad-full?layoutType=4&bizId=ad_fe_full_loading&noBackNavi=true",
+                "icon": "https://static.yximgs.com/udata/pkg/ks-dark/menu_layer_reason_icon.png"
+              }
+            ],
+            "feedNegativeMenu": [
+              {
+                "menuId": 12,
+                "title": "你不感兴趣这条广告的原因？",
+                "subMenuIds": [
+                  13,
+                  7,
+                  8
+                ]
+              },
+              {
+                "menuId": 15
+              },
+              {
+                "menuId": 17
+              }
+            ],
+            "detailNegativeMenu": [
+              {
+                "menuId": 11,
+                "title": "你不感兴趣这条广告的原因？",
+                "subMenuIds": [
+                  13,
+                  7,
+                  8
+                ]
+              },
+              {
+                "menuId": 14
+              },
+              {
+                "menuId": 16
+              }
+            ],
+            "thanosDetailNegativeMenu": [
+              {
+                "menuId": 11,
+                "title": "你不感兴趣这条广告的原因？",
+                "subMenuIds": [
+                  13,
+                  7,
+                  8
+                ]
+              },
+              {
+                "menuId": 14
+              },
+              {
+                "menuId": 16
+              }
+            ],
+            "negativeStyle": 1
+          },
+          "originStyleInfo": {
+            "actionBarBgColor": "e52d2d",
+            "actionBarDesc": "开局一块地，来悠悠人生，打造你的专属农场庄园！",
+            "actionBarTagColor": "d81a1a",
+            "actionBarText": "立即安装",
+            "appIconUrl": "http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg",
+            "appName": "悠悠人生",
+            "appScore": "0",
+            "consultId": "0",
+            "photoUserInfo": {},
+            "productIconUrl": "http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg",
+            "productName": "悠悠人生",
+            "secondIndustryName": "模拟经营",
+            "showPlayEndInfo": true
+          },
+          "playEndInfo": {
+            "actionBarColor": "e52d2d",
+            "playEndStyle": 1,
+            "showEndOption": false,
+            "tagColor": "c61818"
+          },
+          "playedReportRate": [
+            0.75
+          ],
+          "playedReportTime": [
+            7000,
+            10000,
+            18000
+          ],
+          "posId": "54",
+          "templateDatas": [
+            {
+              "commentActionBarType": 1,
+              "data": "{\"hideIcon\":false,\"subTitle\":\"开局一块地，来悠悠人生，打造你的专属农场庄园！\",\"iconUrl\":\"http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg\",\"title\":\"悠悠人生\",\"actionBar\":\"立即安装\",\"actionBarBgColor\":\"E6C545\"}",
+              "displayLocation": 0,
+              "resourceType": 1,
+              "styleType": 8,
+              "templateDelayTime": 9000,
+              "templateId": "dynamic-comment-actionbar",
+              "templateShowTime": 0
+            },
+            {
+              "data": "{\"realShowDelayTime\":6000,\"subTitle\":\"开局一块地，来悠悠人生，打造你的专属农场庄园！\",\"bannerTitle\":\"近一周1.1万人已下载\",\"actionbarExpandTime\":9000,\"displayInfo\":{\"actionBar\":\"立即安装\",\"actionBarBgColor\":\"E6C545\"},\"iconUrl\":\"http://static.yximgs.com/udata/pkg/marketee187ac7a96c4727bb946055b3e040a5.jpg\",\"title\":\"悠悠人生\",\"cardStyle\":2,\"actionBarLoadTime\":4000,\"showWeakStyle\":true,\"weakStyleInfo\":{\"animationStyle\":2,\"weakStyleDelayTime\":0,\"title\":\"近一周1.1万人已下载\"}}",
+              "displayLocation": 0,
+              "mixBarType": 1,
+              "resourceType": 1,
+              "styleType": 6,
+              "templateDelayTime": 9000,
+              "templateId": "adtk-feed-mixbar",
+              "templateShowTime": 0
+            }
+          ],
+          "webviewType": 0
+        },
+        "adDescription": "开局一块地，来悠悠人生，打造你的专属农场庄园！",
+        "smallIcon": null,
+        "merchantEnhanceDisplay": null,
+        "hasNewStyle": 0,
+        "missionId": 0,
+        "taskId": 0,
+        "adRerankInfo": {
+          "pos": 5,
+          "rankType": 3
+        },
+        "adStyle": 0,
+        "deviceInfo": {},
+        "styles": {
+          "templates": [
+            {
+              "templateId": "dynamic-comment-actionbar",
+              "templateUrl": "https://static.yximgs.com/s1/tachikoma/dist/dynamic-comment-actionbar.101.js",
+              "templateVersion": "1.0.1",
+              "templateVersionCode": 101,
+              "templateMd5": "6b4b6c7330bbd9ecfba4c1b1da01f044"
+            },
+            {
+              "templateId": "adtk-feed-mixbar",
+              "templateUrl": "https://js.a.kspkg.com/kos/nlav10814/r_adtk-feed-mixbar.116.js",
+              "templateVersion": "1.1.6",
+              "templateVersionCode": 116,
+              "templateMd5": "7a52275999790fe46168096d2dde1fe0"
+            }
+          ]
+        },
+        "universeConfig": null,
+        "callbackParam": null,
+        "layout": null,
+        "playEndInfo": {
+          "playEndStyle": 1000
+        },
+        "adTypeForGap": 1,
+        "enableRetainTopAd": false,
+        "supConversionType": null,
+        "disableFansTopDetailIconClick": false
+      },
+      "shareGuide": {
+        "playTimes": 1,
+        "photoShareGuide": false,
+        "minPlayDurationInSeconds": 15,
+        "textDisplayDurationInSeconds": 4
+      },
+      "us_d": 1,
+      "share_info": "userId=3xwfc63ftu66eru&photoId=3xmqxhwr47bt2t2",
+      "forward_stats_params": {
+        "fid": "2599323089",
+        "et": "1_u/2001306295595175122_hd0"
+      },
+      "liked": 0,
+      "hated": 0,
+      "frameStyle": 0,
+      "plcFeatureEntryAbFlag": 0,
+      "noNeedToRequestPLCApi": true,
+      "plcResponseTime": 0,
+      "plcHighPriorityThanBottomEntry": false,
+      "type": 1,
+      "ext_params": {
+        "mtype": 3,
+        "color": "EAEAEA",
+        "w": 720,
+        "sound": 0,
+        "h": 1280,
+        "interval": 29,
+        "video": 55088
+      },
+      "main_mv_urls": [
+        {
+          "url": "https://alimov2.a.kwimgs.com/upic/2022/03/12/21/BMjAyMjAzMTIyMTQ1MDhfMjY4NTM5NzI1M182OTQ5Mzc1MTkwMF8wXzM=_b_B74e3af12eb599e3050f621d7bf08a935.mp4?tag=1-1651476312-unknown-0-hsyotepcgb-b5ba524dc7ea0c64&clientCacheKey=3xmqxhwr47bt2t2_b.mp4&tt=b&di=b7dbfc96&bp=13292"
+        }
+      ],
+      "main_url": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg",
+      "cover_thumbnail_urls": [
+        {
+          "url": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg"
+        }
+      ],
+      "thumbnail_urls": [
+        {
+          "url": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg"
+        }
+      ],
+      "cover_urls": [
+        {
+          "url": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg"
+        }
+      ],
+      "thumbnail_url": "http://tx2.a.yximgs.com/udata/pkg/market91c3017bb2054702b49ee4a3c1aadcb8.kpg",
+      "main_mv_url": "https://alimov2.a.kwimgs.com/upic/2022/03/12/21/BMjAyMjAzMTIyMTQ1MDhfMjY4NTM5NzI1M182OTQ5Mzc1MTkwMF8wXzM=_b_B74e3af12eb599e3050f621d7bf08a935.mp4?tag=1-1651476312-unknown-0-hsyotepcgb-b5ba524dc7ea0c64&clientCacheKey=3xmqxhwr47bt2t2_b.mp4&tt=b&di=b7dbfc96&bp=13292",
+      "serverExpTag": "feed_photo|5217420238989993561|2685397253|1_u/2001306295595175122_hd0",
+      "exp_tag": "1_u/2001306295595175122_hd0",
+      "override_cover_size": {
+        "width": 720,
+        "height": 1280
+      },
+      "profilePagePrefetchInfo": {
+        "profilePageType": 1
+      },
+      "followShoot": {
+        "isLipsSyncPhoto": false
+      },
+      "extEntry": null,
+      "user_id": 2685397253,
+      "feedLogCtx": {
+        "stidContainer": "CkMxfDIwMDEzMDYyOTU1OTUxNzUxMjJ8cGhvdG86NTIxNzQyMDIzODk4OTk5MzU2MXx7InBnIjoiaGQifXx7InIiOjB9"
+      }
+    }
+  ],
+  "error_msg": "OK"
+}
