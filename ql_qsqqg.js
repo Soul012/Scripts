@@ -6,7 +6,6 @@ https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.jpg
 
 定时为每小时一次，务必在0分到5分之间运行，目前每天大概1毛7
 提现需要关注微信公众号，在公众号里申请提现
-请手动点一下签到页面的【收零花钱】领一次金币，去【果园】里选择水果种子
 
 青龙：
 捉https://market.chuxingyouhui.com/promo-bargain-api/activity/mqq/api/indexTopInfo的包
@@ -48,6 +47,7 @@ let fertilizerCount = 0
 let clickTreeTimes = 1
 let signRetryTimes = 3
 let signRetryCount = 0
+let totalMoney = 0
 
 var todayDate = formatDateTime(new Date());
 let bussinessInfo = '{}'
@@ -72,7 +72,7 @@ let rndtime = "" //毫秒
         console.log('\n提现需要关注微信公众号，在公众号里申请提现')
         
         for(userIdx=0; userIdx<blackArr.length; userIdx++) {
-            console.log(`\n===== 开始用户${userIdx+1} =====`)
+            console.log(`\n===== 开始用户${userIdx+1} 勋章任务 =====`)
             await querySignStatus()
             await listUserTask()
             //await listRedPacket()
@@ -80,13 +80,19 @@ let rndtime = "" //毫秒
             //await queryPiggyInfo()
             //翻卡看视频需要前置条件
             //await getUserFlopRecord()
-            await userFruitDetail()
-            await waterTaskList()
-            await nutrientTaskList()
-            await userFertilizerDetail()
-            await getTreeCoupon()
+        }
+        /*
+        for(userIdx=0; userIdx<blackArr.length; userIdx++) {
+            console.log(`\n===== 开始用户${userIdx+1} 视频任务 =====`)
+            //收取存钱罐看视频需要前置条件
+            //await queryPiggyInfo()
+            //翻卡看视频需要前置条件
+            //await getUserFlopRecord()
+        }*/
+        for(userIdx=0; userIdx<blackArr.length; userIdx++) {
             await userInfo()
         }
+        
         await showmsg()
     }
   
@@ -170,6 +176,44 @@ async function checkEnv()
 }
 
 //==========================================================================
+//加密接口
+async function getSignInfo(type, timeout=5000) {
+    signRetryCount++
+    let caller = printCaller()
+    //rndtime = Math.round(new Date().getTime())
+    return new Promise((resolve) => {
+        let url = {
+            url: `http://cxyh.sijia.fun/?type=${type}&token=${blackArr[userIdx]['token']}`,
+            headers: {
+                'Host' : 'cxyh.sijia.fun',
+                'Connection' : 'keep-alive',
+            },
+        };
+        $.get(url, async (err, resp, data) => {
+            try {
+                if (err) {
+                    console.log("Fucntion " + caller + ": API请求失败");
+                    if(signRetryCount < signRetryTimes) getSignInfo(type)
+                } else {
+                    if (safeGet(data)) {
+                        let result = JSON.parse(data);
+                        if(logDebug) console.log(result);
+                        if(result.success == true) {
+                            reqTime = result.requests_time
+                            userSign = result.sign
+                            redPacketId = result.redPacketId ? result.redPacketId : ''
+                        }
+                    }
+                }
+            } catch (e) {
+                $.logErr(e, resp);
+            } finally {
+                resolve();
+            }
+        },timeout);
+    });
+}
+
 //获取视频信息
 async function getBussinessInfo(adId,activityType,bussinessType,version) {
     let caller = printCaller()
@@ -375,9 +419,12 @@ async function listUserTask() {
                                         } else if(taskItem.taskType.indexOf('SHOPPING') > -1) {
                                             //跳过购物任务
                                             continue
+                                        } else if(taskItem.taskType.indexOf('BROWSE_ARTICLE') > -1) {
+                                            //看小说
+                                            continue
+                                        } else {
+                                            await doTask(taskItem.taskType,taskItem.userTaskId,taskItem.taskTitle)
                                         }
-                                        await $.wait(1000)
-                                        await doTask(taskItem.taskType,taskItem.userTaskId,taskItem.taskTitle)
                                     }
                                     
                                 }
@@ -592,7 +639,6 @@ async function getUserFlopRecord() {
                                     let recordItem = result.data.recordList[i]
                                     if(!recordItem.status) {
                                         await getBussinessInfo(946087990,12,'WITHDRAWAL_WATCH_VIDEO','v3')
-                                        await $.wait(1000)
                                         await userFlop(recordItem.serialNumber)
                                     }
                                 }
@@ -707,7 +753,6 @@ async function listRedPacket() {
                                     if(redItem.status == 2 && redItem.money == 0 && redPacketCount < 7) {
                                         signRetryCount = 0
                                         await getSignInfo('open')
-                                        await $.wait(500)
                                         await openRedPacket()
                                     }
                                 }
@@ -763,7 +808,6 @@ async function openRedPacket() {
                             console.log(`打开红包获得：${result.data.money}现金`)
                             signRetryCount = 0
                             await getSignInfo('boom')
-                            await $.wait(2000)
                             await boomRedPacket()
                         } else {
                             console.log(`打开红包失败：${result.msg}`)
@@ -982,7 +1026,6 @@ async function wateringFruit() {
                                     console.log(`果树升级到 ${result.data.level} 获得：${result.data.upgradeReward}水滴`)
                                 }
                                 waterCount++
-                                await $.wait(500)
                                 await wateringFruit()
                             }
                         } else {
@@ -1111,7 +1154,6 @@ async function doWaterTask(taskType,taskId,taskTitle) {
                         } else {
                             console.log(`完成水滴任务【${taskTitle}】失败：${result.msg}`)
                         }
-                        await $.wait(1000)
                     }
                 }
             } catch (e) {
@@ -1163,7 +1205,6 @@ async function receiveWaterDrop(taskType,userTaskId,taskTitle) {
                         } else {
                             console.log(`领取水滴任务【${taskTitle}】奖励失败：${result.msg}`)
                         }
-                        await $.wait(1000)
                     }
                 }
             } catch (e) {
@@ -1272,7 +1313,6 @@ async function doNutrientTask(taskType,taskId,taskTitle) {
                         } else {
                             console.log(`完成肥料任务【${taskTitle}】失败：${result.msg}`)
                         }
-                        await $.wait(1000)
                     }
                 }
             } catch (e) {
@@ -1384,7 +1424,6 @@ async function useFertilizer(userToolId) {
                         } else {
                             console.log(`施肥失败：${result.msg}`)
                         }
-                        await $.wait(500)
                     }
                 }
             } catch (e) {
@@ -1440,14 +1479,12 @@ async function clickTree() {
                         let result = JSON.parse(data);
                         if(logDebug) console.log(result);
                         if(result.code == 200) {
-                            await $.wait(1000)
                             if(result.data.hasReward == true) {
                                 await receiveReward(result.data.rewardId,result.data.rewardName,result.data.rewardInfo)
                             }
                         } else {
                             console.log(`果园点击树失败：${result.msg}`)
                         }
-                        await $.wait(500)
                     }
                 }
             } catch (e) {
@@ -1514,6 +1551,7 @@ async function receiveReward(rewardId,rewardName,rewardInfo) {
 async function userInfo() {
     console.log(`\n========= 账户${userIdx+1} 信息 =========`)
     notifyStr += `========= 账户${userIdx+1} 信息 =========\n`
+    await getUserInfo()
     await userRebateInfo()
     await userTopInfo()
 }
@@ -1547,15 +1585,16 @@ async function userRebateInfo() {
                         let result = JSON.parse(data);
                         if(logDebug) console.log(result);
                         if(result.code == 200) {
+                            totalMoney = 0
                             console.log(`【骑士卡号】：${result.data.userPointsResp.cardNo}`)
                             notifyStr += `【骑士卡号】：${result.data.userPointsResp.cardNo}\n`
                             console.log(`【现金余额】：${result.data.currencyBlanceResp.commission}元`)
                             notifyStr += `【现金余额】：${result.data.currencyBlanceResp.commission}元\n`
+                            totalMoney += result.data.currencyBlanceResp.commission
                         } else {
                             console.log(`查询现金余额失败：${result.msg}`)
                             notifyStr += `查询现金余额失败：${result.msg}\n`
                         }
-                        await $.wait(200)
                     }
                 }
             } catch (e) {
@@ -1600,11 +1639,14 @@ async function userTopInfo() {
                         if(result.code == 200) {
                             console.log(`【勋章余额】：${result.data.score} ≈ ${result.data.score/10000}元`)
                             notifyStr += `【勋章余额】：${result.data.score} ≈ ${result.data.score/10000}元\n`
+                            totalMoney += Math.floor(result.data.score/10000)
+                            totalMoney = Math.floor(totalMoney * 100)/100
+                            console.log(`【可提现余额】：${totalMoney}元`)
+                            notifyStr += `【可提现余额】：${totalMoney}元\n`
                         } else {
                             console.log(`查询勋章余额失败：${result.msg}`)
                             notifyStr += `查询勋章余额失败：${result.msg}\n`
                         }
-                        await $.wait(200)
                     }
                 }
             } catch (e) {
@@ -1616,6 +1658,53 @@ async function userTopInfo() {
     });
 }
 
+//查询勋章余额
+async function getUserInfo() {
+    let caller = printCaller()
+    //rndtime = Math.round(new Date().getTime())
+    return new Promise((resolve) => {
+        let url = {
+            url: 'https://facade-api.black-unique.com/user/common/v1/getUserInfo',
+            headers: {
+                'Host' : 'facade-api.black-unique.com',
+                'Origin' : 'https://m.black-unique.com',
+                'Accept-Encoding' : 'gzip, deflate, br',
+                'Connection' : 'keep-alive',
+                'black-token' : blackArr[userIdx]['black-token'],
+                'Accept' : 'application/json, text/plain, */*',
+                'User-Agent' : blackArr[userIdx]['User-Agent'],
+                'Referer' : 'https://m.black-unique.com/',
+                'token' : blackArr[userIdx]['token'],
+                'Accept-Language' : 'zh-CN,zh-Hans;q=0.9',
+            },
+        };
+        $.get(url, async (err, resp, data) => {
+            try {
+                if (err) {
+                    console.log("Fucntion " + caller + ": API请求失败");
+                    console.log(JSON.stringify(err));
+                    $.logErr(err);
+                } else {
+                    if (safeGet(data)) {
+                        let result = JSON.parse(data);
+                        if(logDebug) console.log(result);
+                        if(result.code == 0) {
+                            console.log(`【用户手机】：${result.data.phone}`)
+                            notifyStr += `【用户手机】：${result.data.phone}\n`
+                        } else {
+                            console.log(`查询用户手机失败：${result.msg}`)
+                            notifyStr += `查询用户手机失败：${result.msg}\n`
+                        }
+                    }
+                }
+            } catch (e) {
+                $.logErr(e, resp);
+            } finally {
+                resolve();
+            }
+        });
+    });
+}
 ////////////////////////////////////////////////////////////////////
 function safeGet(data) {
   try {
