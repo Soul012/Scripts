@@ -1,2 +1,3 @@
-hostname=api.aiqingyinghang.com
+hostname=api.aiqingyinghang.com, b2b.homedo.com
 /user/getselfgroupsids url script-request-header http://script.frp.aiuyo.com:8680/scripts/yqlyf.js
+https://b2b.homedo.com/mall-pcweb-compositeservice/member/userInfo/getLoginInfoSpecial url script-request-body https://raw.githubusercontent.com/xl2101200/-/main/hmd.js
