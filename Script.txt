@@ -1,0 +1,2 @@
+hostname=api.aiqingyinghang.com
+/user/getselfgroupsids url script-request-header http://script.frp.aiuyo.com:8680/scripts/yqlyf.js
