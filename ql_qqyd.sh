@@ -1,4 +1,3 @@
-url="https://eventv3.reader.qq.com/activity/pkg11955"
 spdd(){
 for ((s=30;s>0;s--))
 do
@@ -31,6 +30,7 @@ if [ "$rwkx" == "true" -a "$rwqk" != "true" ]
 then rw="选择阅读口味奖励"
 zx=$(curl -s -H "Cookie:$ck" "https://commontgw6.reader.qq.com/h5/questionnaire/sendCoin")
 jg
+else echo $rw已完成
 fi
 }
 mrdk(){
@@ -48,6 +48,7 @@ then spdd
 rw="打卡看小视频"
 zx=$(curl -s -H "Cookie:$ck" "$url/punchCardWatchVideo")
 jg
+else echo $rw已完成
 fi
 }
 wzcj(){
@@ -76,19 +77,34 @@ if [ "$rwqk" != "true" ]
 then rw="加书架看小视频"
 zx=$(curl -s -H "Cookie:$ck" "$url/addBookShelfWatchVideo")
 jg
+else echo $rw已完成
 fi
 }
 ydkxsp(){
 rw="阅读看小视频"
-time="5@30@60@120"
-for ((i=1;i<5;i++))
+qrt=$(curl -s -H "Cookie:$ck" "$url/queryUserReadTaskStatus")
+rwcs=$(echo $qrt | grep -o 'targetTime":[0-9]*' | cut -d ":" -f2)
+rwsl=$(echo "$rwcs" | wc -l)
+rwqk=$(echo $qrt | grep -o 'watched":[a-z]*' | cut -d ":" -f2)
+wcsl=$(echo $rwqk | grep -o "true" | wc -l)
+t=$((rwsl+1))
+ksp(){
+for i in "$@"
 do
-spdd
-zxt=$(echo $time | cut -d "@" -f$i)
-zx=$(curl -s -H "Cookie:$ck" "$url/readBookWatchVideo?targetTime=$zxt")
-echo 第$i次$rw
+csjg=$(echo $qrt | grep -o "$i.*" | grep -o "watched.*" | cut -d '"' -f2 | grep -o "[a-z]*")
+if [ "$csjg" != "true" ]
+then spdd
+zx=$(curl -s -H "Cookie:$ck" "$url/readBookWatchVideo?targetTime=$i")
+echo $i分钟$rw
 jg
+else echo $i分钟$rw$csjg
+fi
 done
+}
+if [ $rwsl -ne $wcsl ]
+then ksp $rwcs
+else echo $rw已完成
+fi
 }
 kxsp(){
 ye
@@ -119,18 +135,8 @@ jg
 sleep 3605
 done
 }
-run(){
-xyhtxyqm
-xzydkwjl
-mrdk
-dkkxsp
-wzcj
-ydzdsj
-jsjkxsp
-ydkxsp
-kxsp
-kbx
-}
+cl(){
+url="https://eventv3.reader.qq.com/activity/pkg11955"
 if [ -s ck ]
 then ck=$(cat ck)
 if [ -z "$ck" ]
@@ -145,13 +151,30 @@ then zs=$(($(cat ck | grep -o "@" | wc -l)+1))
 [ ! -n "$(cat ck | cut -d "@" -f"$zs")" ] && zs=$(cat ck | grep -o "@" | wc -l)
 else zs=1
 fi
+}
+rw(){
 for ((i=1;i<$((zs+1));i++))
 do 
 echo $dt 总共有$zs个账户，正在执行第$i个账户
 ck=$(cat ck | cut -d "@" -f"$i")
 if [ -n "$ck" ]
-then run
+then $1
 echo 执行第$i个账户结束
 fi
 sleep 0
 done
+}
+run(){
+rw xyhtxyqm
+rw xzydkwjl
+rw mrdk
+rw dkkxsp
+rw wzcj
+rw ydzdsj
+rw jsjkxsp
+rw ydkxsp
+rw kxsp
+rw kbx
+}
+cl
+run
