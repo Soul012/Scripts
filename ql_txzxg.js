@@ -28,8 +28,8 @@ hostname = wzq.tenpay.com
 const $ = new Env('腾讯自选股')
 cron: 12 17 * * *
 */
-
-
+const jsname = '腾讯自选股V2'
+const $ = new Env(jsname);
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
 let notifyStr = ''
 

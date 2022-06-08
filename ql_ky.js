@@ -1,3 +1,8 @@
+//cron: 43 */10 6-23 * * *
+const $ = new Env('快音')
+/*
+
+安卓软件名称:快音
 /*
 
 安卓软件名称:快音
@@ -31,12 +36,11 @@ module.exports = {"code":200,
 }
 
 
-cron: 43 */10 6-23 * * *
-const $ = new Env('快音')
+cron 0-59/10 6-20 * * *
+
 脚本地址:https://gitee.com/soy-tool/app-script/raw/master/app_kyin.js
 
 */
-
 
 // @grant require
 const notify = $.isNode() ? require('./sendNotify') : '';

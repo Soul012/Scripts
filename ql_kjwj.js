@@ -1,7 +1,7 @@
 /*
-const $ = new Env('科技玩家')
 cron: 15 9 * * *
 */
+const $ = new Env('科技玩家')
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
