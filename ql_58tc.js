@@ -27,8 +27,6 @@ https://magicisland.58.com/web/sign/getIndexSignInInfo url script-request-header
 hostname = magicisland.58.com
 */
 const $ = new Env('58同城')
-const jsname = '58同城'
-const $ = Env(jsname)
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
