@@ -1,7 +1,5 @@
-/*
+//cron: 17 8-18 * * *
 const $ = new Env('58同城')
-cron: 17 8-18 * * *
-*/
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
