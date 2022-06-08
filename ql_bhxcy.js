@@ -1,19 +1,7 @@
 /*
-@肥皂 2.22 渤海宣传员 签到兑换e卡（微信搜索小程序）
-邀请码  =  878217
-电子账户注册后可以直接领取10元e卡。。。
-青龙抓取签到接口的全部请求体：
-格式  变量名bhxcytoken  uid=xxxx&token=xxxxxxxxxxxxxx
-https://api.yd.ihaoqu.com/ 接口链接。
-
-重新打开小程序会掉登录。。
-
-3.24更新 
-加入用户信息和余额显示。。自动兑换（会兑换到绑定的手机号）
-签到一个星期有1.5元左右的e卡。十元自动兑换
-
+const $ = new Env('渤海宣传员')
+cron: 17 9 * * *
 */
-const $ = new Env('渤海宣传员');
 let status;
 status = (status = ($.getval("bhxcystatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
 let bhxcytokenArr = [], bhxcycount = '',bhdh = ""

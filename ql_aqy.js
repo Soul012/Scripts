@@ -1,33 +1,7 @@
 /*
-
-爱奇艺会员签到脚本
-
-更新时间: 2022.1.26
-
-脚本兼容: QuantumultX, Surge4, Loon, JsBox, Node.js
-
-电报频道: @NobyDa
-
-问题反馈: @NobyDa_bot
-
-获取Cookie说明：
-
-Safari浏览器网页登录 https://m.iqiyi.com/user.html 如通知成功获取cookie则可使用该脚本.
-
-获取Cookie后, 请将Cookie脚本禁用并移除主机名，以免产生不必要的MITM.
-
-脚本将在每天上午9:00执行, 您可以修改执行时间。
-
-如果使用Node.js, 需自行安装'request'模块. 例: npm install request -g
-
-JsBox, Node.js用户获取Cookie说明：
-
-方法一手机：开启抓包, 网页登录 https://m.iqiyi.com/user.html 返回抓包APP搜索URL关键字 apis/user/info.action 复制请求头中的Cookie字段填入以下变量中即可
-
-方法二PC：网页登录 https://www.iqiyi.com 按F12控制台执行 console.log(document.cookie) 复制打印的Cookie填入以下变量中即可
-
-*/
 const $ = new Env('爱奇艺')
+cron: 17 8 * * *
+*/
 var cookie = '__dfp=e1bc4264c9e762435db35ec6b394cc348eaa543b4b0392e0400411f86725f418b4@1644508402410@1643212403410; QCH001=0; P00001=e4tAqf18J42W4Acm2hm3fMZoilxvgSVzNMtfm1gm3wylHC2RxDAg23fipbuZTyErZntwjh96; P00002=%7B%22uid%22%3A984005801411352%2C%22pru%22%3A984005801411352%2C%22user_name%22%3A%22199****7897%22%2C%22nickname%22%3A%22%5Cu4e0d%5Cu8981%5Cu5403%5Cu7cd6%5Cu8c46%22%2C%22pnickname%22%3A%22%5Cu4e0d%5Cu8981%5Cu5403%5Cu7cd6%5Cu8c46%22%2C%22type%22%3A11%2C%22email%22%3A%22gm6pfd38gp%40privaterelay.appleid.com%22%7D; P00003=984005801411352; P00007=e4tAqf18J42W4Acm2hm3fMZoilxvgSVzNMtfm1gm3wylHC2RxDAg23fipbuZTyErZntwjh96; H_RENEW_COUNT=1643212411308; QC007=https://m.iqiyi.com/user.html; QC008=1dc5903b4b7f8ab153c813a96371610f; H5_AB=3; P00010=984005801411352; P00PRU=984005801411352; P01010=1643212800; __uuid=09660975-9382-fc6b-595f-0abd55b1be89; QC006=bfb22136ff1e63c2123483a4e8f808ee; P00004=.1643212386.0155986044; QC005=1a951eda6f9a70fd648401a82eed337f'; //单引号内填入手动获取的Cookie
 
 var barkKey = ''; //Bark APP 通知推送Key
