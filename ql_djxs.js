@@ -23,6 +23,7 @@ export djxsReferer='抓取的Referer1@抓取的Referer2'
 https://dj.palmestore.com/zycl/gold/receive? url script-request-header https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js
 [MITM]
 hostname = dj.palmestore.com
+cron: 0 6-23 * * *
 */
 
 const $ = new Env('得间小说');

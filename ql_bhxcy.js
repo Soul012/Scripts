@@ -1,7 +1,7 @@
 /*
-const $ = new Env('渤海宣传员')
 cron: 17 9 * * *
 */
+const $ = new Env('渤海宣传员')
 let status;
 status = (status = ($.getval("bhxcystatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
 let bhxcytokenArr = [], bhxcycount = '',bhdh = ""

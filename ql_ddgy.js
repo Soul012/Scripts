@@ -1,5 +1,5 @@
 /*
-const $ = new Env('渤海宣传员')
+const $ = new Env('滴滴果园')
 cron: 10 0,8,12,18 * * *
 */
 let tokens = [];
