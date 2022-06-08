@@ -2,12 +2,10 @@
 更新时间: 2021-12-14 22:10
 
 本脚本仅适用于微博每日签到，支持多账号运行  
-
-
+const $ = new Env('新浪微博')
+cron: 20 8 * * *
 获取ck: https:\/\/m?api\.weibo\.c(n|om)\/\d\/users\/show url script-request-header weibo.js
 */
-
-const $ = new Env('新浪微博')
 const notify = $.isNode() ? require('./sendNotify') : '';
 let tokenArr = [],  cookieArr = [];
 let wbtoken = $.getdata('sy_token_wb');

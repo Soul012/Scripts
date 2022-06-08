@@ -22,7 +22,8 @@ https://mspace.gmmc.com.cn/user-soa/user/account/sign-in url script-request-head
 hostname = mspace.gmmc.com.cn
 
 0 22 * * * https://raw.githubusercontent.com/xl2101200/-/main/gqsl.js, tag=广汽三菱(ios), img-url=https://raw.githubusercontent.com/xl2101200/-/main/tom.png, enabled=false
-
+const $ = new Env('广汽三菱')
+cron: 7 9 * * *
  */
 
 

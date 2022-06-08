@@ -14,6 +14,7 @@ ql raw http://47.101.146.160/scripts/htt.js
 export htthd='{"loginId":"替换的","userId":替换的}'
 
 多账号用@隔开
+cron: 27 6-23 * * *
 */
 // [task_local]
 // */60 * * * * http://47.101.146.160/scripts/htt.js, tag=惠头条, img-url=circles.hexagongrid.fill.system, enabled=true

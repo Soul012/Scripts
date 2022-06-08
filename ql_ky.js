@@ -31,14 +31,13 @@ module.exports = {"code":200,
 }
 
 
-cron 0-59/10 6-20 * * *
-
+cron: 43 */10 6-23 * * *
+const $ = new Env('快音')
 脚本地址:https://gitee.com/soy-tool/app-script/raw/master/app_kyin.js
 
 */
 
 
-const $ = new Env('【快音】版本:22.02.22.0');
 // @grant require
 const notify = $.isNode() ? require('./sendNotify') : '';
 

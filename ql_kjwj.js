@@ -1,10 +1,7 @@
 /*
-科技玩家-签到
-
-export kjwjCookie='username=你的账号; password=你的密码;'
+const $ = new Env('科技玩家')
+cron: 15 9 * * *
 */
-const jsname = '科技玩家签到'
-const $ = new Env(jsname);
 const logDebug = 0
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1

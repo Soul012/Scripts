@@ -20,11 +20,9 @@ V2P，圈X：重写方法 -- 点击右下角【我的】-> 【每日签到赚现
 https://market.chuxingyouhui.com/promo-bargain-api/activity/mqq/api/indexTopInfo? url script-request-header https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js
 [MITM]
 hostname = market.chuxingyouhui.com
-
+const $ = new Env('全球购骑士卡')
+cron: 21 0 * * * *
 */
-
-const jsname = '全球购骑士特权'
-const $ = Env(jsname)
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
 const logDebug = 0
 
