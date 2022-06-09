@@ -1,7 +1,3 @@
-/*
-const $ = new Env('QQ阅读')
-cron: 32 10-18/2 * * *	
-*/
 bd(){
 guid=$(echo $ck | cut -d "@" -f1 | grep -o "guid.*" | cut -d "=" -f2 | cut -d ';' -f1)
 qrsn=$(echo $ck | cat qrck | cut -d "@" -f1 | grep -o "qrsn.*" | cut -d "=" -f2 | cut -d ';' -f1)
