@@ -1,5 +1,7 @@
-//cron：20 9-14 * * *
- const $ = new Env('同程旅行种树');
+/*
+const $ = new Env('同程果园')
+cron: 20 9-14 * * *
+*/
  const notify = $.isNode() ? require('./sendNotify') : '';
  const {log} = console;
  const Notify = 1; //0为关闭通知，1为打开通知,默认为1
