@@ -1,6 +1,6 @@
 /*
 const $ = new Env('河姆渡')
-cron: 6 10 * * *
+cron: 16 10 * * *
  */
 const $ = new Env('河姆渡');
 const notify = $.isNode() ? require('./sendNotify') : '';
