@@ -1,4 +1,4 @@
-hostname=api.aiqingyinghang.com, b2b.homedo.com,bwa.feierlaiedu.com,goldcoinnew.zhuishushenqi.com,h5.ele.me,*.zhongchuanjukan.com,api.st615.com, *.fqnovel.com, *.novelfm.com,*.snssdk.com, *.amemv.com,api.aiqingyinghang.com,api.kuaisho*.com,open.kuaisho*.com,*.palmestore.com,miniapp.you.163.com,*.xiaoyoureliao.cn,sgame.moxigame.cn,api.smartcinema.com.cn,www.chongpar.cn,pbaccess.video.qq.com
+hostname=api.aiqingyinghang.com, b2b.homedo.com,bwa.feierlaiedu.com,goldcoinnew.zhuishushenqi.com,h5.ele.me,*.zhongchuanjukan.com,api.st615.com, *.fqnovel.com, *.novelfm.com,*.snssdk.com, *.amemv.com,api.aiqingyinghang.com,api.kuaisho*.com,open.kuaisho*.com,*.palmestore.com,miniapp.you.163.com,*.xiaoyoureliao.cn,sgame.moxigame.cn,api.smartcinema.com.cn,www.chongpar.cn,pbaccess.video.qq.com,point.jrongjie.com
 https://bwa.feierlaiedu.com/api/v1/bbg/taskRecord/queryUserInfo url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/jzyl.js
 https://goldcoinnew.zhuishushenqi.com/account/profile url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/zssq.js
 https://h5.ele.me/restapi/biz.growth_finetune/v1/finetune/operate? url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/elm.js
@@ -18,3 +18,4 @@ https://sgame.moxigame.cn/planttree_tc//game/local/logincheck url script-request
 ^https://api.smartcinema.com.cn/.+ url script-request-header http://script.frp.aiuyo.com:8680/scripts/ydyy.js
 https://www.chongpar.cn/member/cp-member-integral/add url script-request-header https://raw.githubusercontent.com/Soul012/Scripts/main/ql_llt.js
 https://pbaccess.video.qq.com/activity/welfare_center/queryUserActivity url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/txspfl.js
+https://point.jrongjie.com/web/auth/app/login url script-request-header https://raw.githubusercontent.com/LinYuanovo/scripts/main/hjq.js
