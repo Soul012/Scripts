@@ -1,5 +1,5 @@
 /*
-const $ = new Env('应用试客')
+const $ = new Env('全免漫画')
 cron: 27 7 * * *
 */
 
