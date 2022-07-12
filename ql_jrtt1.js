@@ -1,6 +1,6 @@
 /*
 const $ = new Env('今日头条')
-cron: 7,37 * * * *
+cron: 5,35 * * * *
 */
 const $ = new Env('今日头条');
 
