@@ -24,7 +24,7 @@
 //多账号版,支持用手机抓包headers,新版不支持手机跑脚本刷音符,需要手机刷用老版本,只支持单账号
 
 //const $ = new Env('抖音极速版视频')
-//cron: */2 6-23 * * *
+//cron: */2 * * * *
 
 let isShowCionDetail = false;//显示收益详情
 
