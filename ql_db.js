@@ -8,6 +8,7 @@
  let envSplitor = ['@']
  let httpResult, httpReq, httpResp
  let userCookie = ($.isNode() ? process.env.dbcookie : $.getdata('dbcookie')) || '';
+ let devid = ($.isNode() ? process.env.dbdevcookie : $.getdata('dbdevcookie')) || '00000000-0000-0000-0000-000000000000';
  let userList = []
  let userIdx = 0
  let userCount = 0
@@ -43,8 +44,9 @@
  			let urlObject = populateUrlObject(url, token, body)
  			await httpRequest('post', urlObject)
  			let result = httpResult;
- 			await this.label()
- 			console.log(`账号[${this.name}] `  + ` 资料设置为 ` + result.data.reside)
+ 			let nicknamex = result.data.nickname
+ 			await this.label(nicknamex)
+ 			console.log(`账号[${this.name}] ` + nicknamex + ` 资料设置为 ` + result.data.reside)
  		}
  		catch (e)
  		{
@@ -55,7 +57,7 @@
  			return Promise.resolve(1);
  		}
  	}
- 	async label()
+ 	async label(nicknamex)
  	{
  		try
  		{
@@ -85,7 +87,8 @@
  			let urlObject = populateUrlObject(url, token, body)
  			await httpRequest('get', urlObject)
  			let result = httpResult;
- 			await this.view()
+ 			let nickname = result.data.nickname
+ 			await this.view(nickname)
  		}
  		catch (e)
  		{
@@ -96,7 +99,7 @@
  			return Promise.resolve(1);
  		}
  	}
- 	async receive()
+ 	async receive(nickname)
  	{
  		try
  		{
@@ -110,9 +113,9 @@
  			this.code = result.code
  			if(this.code == 200)
  			{
- 				console.log(`\n账号[${this.name}] ` + ` 提现 :` + this.message)
+ 				console.log(`\n账号[${this.name}] ` + nickname + ` 提现 :` + this.message)
  			}
- 			else if(this.code == 400) console.log(`\n账号[${this.name}] ` +  ` 提现 : ` + this.message)
+ 			else if(this.code == 400) console.log(`\n账号[${this.name}] ` + nickname + ` 提现 : ` + this.message)
  		}
  		catch (e)
  		{
@@ -123,7 +126,7 @@
  			return Promise.resolve(1);
  		}
  	}
- 	async view()
+ 	async view(nickname)
  	{
  		try
  		{
@@ -133,17 +136,16 @@
  			let urlObject = populateUrlObject(url, token, body)
  			await httpRequest('get', urlObject)
  			let result = httpResult;
- 			this.day = result.data.today
  			this.zfb = result.data.zfb_account
  			this.money = result.data.money
  			if(result.data.status == 0)
  			{
- 				console.log(`账号[${this.name}] ` +  ` \n绑定支付宝:` + this.zfb + ` 可提金额:` + this.money + `\n`)
+ 				console.log(`账号[${this.name}] ` + nickname + ` \n绑定支付宝:` + this.zfb + ` 可提金额:` + this.money + `\n`)
  				await this.receive()
  			}
  			else if(result.data.status == 1)
  			{
- 				console.log(`账号[${this.name}] ` +  ` \n绑定支付宝:` + this.zfb + ` 已提金额:` + this.money + `\n`)
+ 				console.log(`账号[${this.name}] ` + nickname + ` \n绑定支付宝:` + this.zfb + ` 已提金额:` + this.money + `\n`)
  			}
  		}
  		catch (e)
@@ -281,7 +283,7 @@
  		headers:
  		{
  			'Host': host,
- 			'device-id': "00000000-0000-0000-0000-000000000000",
+ 			'device-id': devid,
  			'douban-token': token,
  			'douban-version': "23",
  			'device-type': "ios",
