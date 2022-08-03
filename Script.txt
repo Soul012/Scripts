@@ -19,3 +19,4 @@ https://point.jrongjie.com/web/auth/app/login url script-request-header https://
 api.imdouban.com/v1/users url script-request-header https://kireinasakura.coding.net/p/could/d/there/git/raw/master/db.js
 https://dj.palmestore.com/zycl/gold/receive? url script-request-header https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js 
 https://gsp.gacmotor.com/gateway/webapi/account/getUserInfoV2 url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/gqcq.js
+
