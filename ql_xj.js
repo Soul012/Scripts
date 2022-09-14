@@ -1,14 +1,5 @@
-/*
-微信小程序：习酒会员俱乐部
-默认填写作者推荐码 需要修改在693行修改
-变量为xjhd
-抓包域名 anti-channeling/public/index.php/api/v2/
-查看请求头的login_code
-比如 export xjhd='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.XXXXXX'
-多账号@隔开
-比如 export xjhd='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.XXXXXX'@'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.XXXXXX'
-*/
-//定时 0 */2 * * * 吧
+//const $ = new Env('习酒')
+//cron: 0 */2 * * *
 const $ = new Env('习酒');
 var request = require("request");
 let status;
