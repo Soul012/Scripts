@@ -1,6 +1,8 @@
-hostname=*.palmestore.com,game.xiaojukeji.com
+hostname=*.palmestore.com,game.xiaojukeji.com,*.zhongchuanjukan.com
 #得间小说
 https://dj.palmestore.com/.+/info/getUserInfo? url script-request-body http://script.frp.aiuyo.com:8680/scripts/djxs.js
 https://dj.palmestore.com/.+video/report? url script-request-header http://script.frp.aiuyo.com:8680/scripts/djxs.js
 #滴滴果园
 https://game.xiaojukeji.com/api/game/plant/enter url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js
+#文旅看点
+https://wlkdapi.zhongchuanjukan.com/home/info url script-request-body  http://script.frp.aiuyo.com/scripts/wlkd.js
