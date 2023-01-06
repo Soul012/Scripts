@@ -1,4 +1,4 @@
-hostname=*.palmestore.com,game.xiaojukeji.com,*.zhongchuanjukan.com,api-access.pangolin-sdk-toutiao.com,*.gylm315.cn
+hostname=*.palmestore.com,game.xiaojukeji.com,*.zhongchuanjukan.com,api-access.pangolin-sdk-toutiao.com,*.gylm315.cn,game.vrupup.com
 #得间小说
 https://dj.palmestore.com/.+/info/getUserInfo? url script-request-body http://script.frp.aiuyo.com:8680/scripts/djxs.js
 https://dj.palmestore.com/.+video/report? url script-request-header http://script.frp.aiuyo.com:8680/scripts/djxs.js
@@ -9,3 +9,5 @@ https://wlkdapi.zhongchuanjukan.com/home/info url script-request-body  http://sc
 #高佣联盟
 https://prd.h5.gylm315.cn/custom_api/html5/taskv6/v1/everydaySignIn url script-request-header http://script.frp.aiuyo.com:8680/scripts/gylm.js
 https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/ url script-request-body http://script.frp.aiuyo.com:8680/scripts/gylm.js
+#香飘飘
+sanguo/wujinwen/h5/xpp_10yx/public/index.php/api/index url script-request-header https://raw.githubusercontent.com/Soul012/Scripts/main/ql_xpp.js
