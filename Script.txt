@@ -12,8 +12,8 @@ https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward
 #香飘飘
 sanguo/wujinwen/h5/xpp_10yx/public/index.php/api/index url script-request-header https://raw.githubusercontent.com/Soul012/Scripts/main/ql_xpp.js
 #番茄小说
-luckycat/novel/v1/task/sign_in/.+ url script-request-header http://script.frp.aiuyo.com/scripts/fqxs.js
-/excitation_ad_treasure_box url script-request-header http://script.frp.aiuyo.com/scripts/fqxs.js
+luckycat/novel/v1/task/sign_in/.+ url script-request-header https://raw.githubusercontent.com/Soul012/Scripts/main/ql_fqxs.js
+/excitation_ad_treasure_box url script-request-header https://raw.githubusercontent.com/Soul012/Scripts/main/ql_fqxs.js
 #书路阅读
 v2/welfare url script-request-body http://script.frp.aiuyo.com/scripts/slyd.js
 Verify/verifyLogin url script-request-body http://script.frp.aiuyo.com/scripts/slyd.js
